@@ -40,10 +40,19 @@
 (define-key god-local-mode-map (kbd "i") 'god-local-mode)
 
 ;; lines
-(require 'linum)
 (setq linum-format "%3d\u2502 ")
 (add-hook 'prog-mode-hook 'linum-mode)
 
 ;; projectile
-(require 'projectile)
-(add-hook 'prog-mode-hook 'projectile-mode)
+;;(add-hook 'prog-mode-hook 'projectile-mode)
+(projectile-global-mode)
+(helm-projectile-on)
+
+;; smartparens
+(require 'smartparens-config)
+;;(add-hook 'prog-mode-hook 'smartparens-mode)
+(smartparens-global-mode)
+
+;; theme
+(global-font-lock-mode 0)
+
