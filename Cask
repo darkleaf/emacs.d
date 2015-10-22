@@ -10,3 +10,4 @@
 (depends-on "haml-mode")
 
 (depends-on "sublime-themes")
+(depends-on "erlang")
