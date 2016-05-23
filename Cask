@@ -5,3 +5,4 @@
 (depends-on "smartparens")
 (depends-on "projectile")
 (depends-on "helm")
+(depends-on "tao-theme")

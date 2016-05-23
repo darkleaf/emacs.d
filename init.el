@@ -1,6 +1,14 @@
 (require 'cask "~/.cask/cask.el")
 (cask-initialize)
 
+;; Disable GUI components
+(tooltip-mode      -1)
+(menu-bar-mode     -1)
+
+;; Disable backup/autosave files
+(setq make-backup-files        nil)
+(setq auto-save-default        nil)
+
 ;; expand region
 (global-set-key (kbd "C-c w") 'er/expand-region)
 (setq expand-region-contract-fast-key "W")
@@ -8,7 +16,6 @@
 ;; smartparens
 (require 'smartparens-config)
 (smartparens-global-mode)
-
 
 ;; helm
 (require 'helm-config)
@@ -44,3 +51,10 @@
 ;; projectile
 (projectile-global-mode)
 (setq projectile-completion-system 'default)
+
+;; theme
+(custom-set-variables
+ '(custom-safe-themes
+   (quote
+    ("40bc0ac47a9bd5b8db7304f8ef628d71e2798135935eb450483db0dbbfff8b11" default))))
+(load-theme 'tao-yang)
