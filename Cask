@@ -6,3 +6,4 @@
 (depends-on "projectile")
 (depends-on "helm")
 (depends-on "tao-theme")
+(depends-on "nlinum")

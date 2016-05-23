@@ -58,3 +58,27 @@
    (quote
     ("40bc0ac47a9bd5b8db7304f8ef628d71e2798135935eb450483db0dbbfff8b11" default))))
 (load-theme 'tao-yang)
+
+;; nlinum
+(setq nlinum-format "%d ")
+(setq modes-to-hook-with-linum '(c-mode-hook
+				 csv-mode-hook
+				 emacs-lisp-mode-hook
+				 feature-mode-hook
+      				 js-mode-hook
+				 javascript-mode-hook
+				 haml-mode-hook
+				 lisp-mode-hook
+				 ruby-mode-hook
+				 sass-mode-hook
+				 scss-mode-hook
+				 xml-mode-hook
+				 yaml-mode-hook))
+
+(defun hook-linum-mode (mode)
+  (add-hook mode 'nlinum-mode))
+
+(while modes-to-hook-with-linum
+  (hook-linum-mode (car modes-to-hook-with-linum))
+  (setq modes-to-hook-with-linum (cdr modes-to-hook-with-linum)))
+
