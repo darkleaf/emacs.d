@@ -55,26 +55,7 @@
 
 ;; nlinum
 (setq nlinum-format "%d ")
-(setq modes-to-hook-with-linum '(c-mode-hook
-				 csv-mode-hook
-				 emacs-lisp-mode-hook
-				 feature-mode-hook
-      				 js-mode-hook
-				 javascript-mode-hook
-				 haml-mode-hook
-				 lisp-mode-hook
-				 ruby-mode-hook
-				 sass-mode-hook
-				 scss-mode-hook
-				 xml-mode-hook
-				 yaml-mode-hook))
-
-(defun hook-linum-mode (mode)
-  (add-hook mode 'nlinum-mode))
-
-(while modes-to-hook-with-linum
-  (hook-linum-mode (car modes-to-hook-with-linum))
-  (setq modes-to-hook-with-linum (cdr modes-to-hook-with-linum)))
+(add-hook 'prog-mode-hook 'nlinum-mode)
 
 ;; theme
 (custom-set-variables
