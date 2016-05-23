@@ -5,6 +5,7 @@
 (depends-on "smartparens")
 (depends-on "projectile")
 (depends-on "helm")
+(depends-on "helm-swoop")
 (depends-on "tao-theme")
 (depends-on "nlinum")
 (depends-on "avy")
