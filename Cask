@@ -7,3 +7,4 @@
 (depends-on "helm")
 (depends-on "tao-theme")
 (depends-on "nlinum")
+(depends-on "avy")

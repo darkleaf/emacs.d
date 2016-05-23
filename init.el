@@ -94,5 +94,6 @@
  ;; If there is more than one, they won't work right.
  '(font-lock-type-face ((t (:underline nil)))))
 
-
+;; avy
+(global-set-key (kbd "C-c f") 'avy-goto-char)
 
