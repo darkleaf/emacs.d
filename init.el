@@ -52,13 +52,6 @@
 (projectile-global-mode)
 (setq projectile-completion-system 'default)
 
-;; theme
-(custom-set-variables
- '(custom-safe-themes
-   (quote
-    ("40bc0ac47a9bd5b8db7304f8ef628d71e2798135935eb450483db0dbbfff8b11" default))))
-(load-theme 'tao-yang)
-
 ;; nlinum
 (setq nlinum-format "%d ")
 (setq modes-to-hook-with-linum '(c-mode-hook
@@ -81,4 +74,24 @@
 (while modes-to-hook-with-linum
   (hook-linum-mode (car modes-to-hook-with-linum))
   (setq modes-to-hook-with-linum (cdr modes-to-hook-with-linum)))
+
+;; theme
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(custom-safe-themes
+   (quote
+    ("40bc0ac47a9bd5b8db7304f8ef628d71e2798135935eb450483db0dbbfff8b11" default))))
+(load-theme 'tao-yang)
+(custom-theme-set-faces
+ 'tao-yang
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(font-lock-type-face ((t (:underline nil)))))
+
+
 
