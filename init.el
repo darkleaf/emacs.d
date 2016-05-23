@@ -15,7 +15,8 @@
 
 ;; smartparens
 (require 'smartparens-config)
-(smartparens-global-mode)
+;;(smartparens-global-mode)
+(show-smartparens-global-mode t)
 
 ;; helm
 (require 'helm-config)
