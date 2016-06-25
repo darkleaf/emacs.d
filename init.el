@@ -17,6 +17,10 @@
 (global-set-key (kbd "C-c w") 'er/expand-region)
 (setq expand-region-contract-fast-key "W")
 
+;;ace-window
+(global-set-key (kbd "C-x o") 'ace-window)
+;;(setq aw-keys '(?a ?s ?d ?f ?g ?h ?j ?k ?l))
+
 ;; smartparens
 (require 'smartparens-config)
 (add-hook 'prog-mode-hook #'smartparens-mode)

@@ -10,3 +10,7 @@
 (depends-on "tao-theme")
 (depends-on "nlinum")
 (depends-on "avy")
+(depends-on "ace-window")
+
+(depends-on "clojure-mode")
+(depends-on "cider")
