@@ -6,8 +6,12 @@
 (menu-bar-mode     -1)
 
 ;; Disable backup/autosave files
+(setq backup-inhibited t)
 (setq make-backup-files        nil)
 (setq auto-save-default        nil)
+
+;; Disable startup screen
+(setq inhibit-startup-screen t)
 
 ;; expand region
 (global-set-key (kbd "C-c w") 'er/expand-region)
@@ -15,7 +19,7 @@
 
 ;; smartparens
 (require 'smartparens-config)
-;;(smartparens-global-mode)
+(add-hook 'prog-mode-hook #'smartparens-mode)
 (show-smartparens-global-mode t)
 
 ;; helm
@@ -51,29 +55,18 @@
 
 ;; projectile
 (projectile-global-mode)
-(setq projectile-completion-system 'default)
+;; (setq projectile-completion-system 'default)
+(helm-projectile-on)
 
 ;; nlinum
 (setq nlinum-format "%d ")
 (add-hook 'prog-mode-hook 'nlinum-mode)
 
 ;; theme
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(custom-safe-themes
-   (quote
-    ("40bc0ac47a9bd5b8db7304f8ef628d71e2798135935eb450483db0dbbfff8b11" default))))
-(load-theme 'tao-yang)
-(custom-theme-set-faces
- 'tao-yang
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(font-lock-type-face ((t (:underline nil)))))
+(global-font-lock-mode -1)
+
+;; disable syntax highlight
+;;(add-hook 'prog-mode-hook 'font-lock-mode)
 
 ;; avy
 (global-set-key (kbd "C-c f") 'avy-goto-char)
