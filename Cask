@@ -12,6 +12,10 @@
 (depends-on "avy")
 (depends-on "ace-window")
 
+(depends-on "bind-key")
+
+(depends-on "hydra")
+
 (depends-on "clojure-mode")
 (depends-on "cider")
 

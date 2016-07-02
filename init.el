@@ -13,12 +13,15 @@
 ;; Disable startup screen
 (setq inhibit-startup-screen t)
 
+(load-file "mac-clipboard.el")
+(load-file "hydras.el")
+
 ;; expand region
 (global-set-key (kbd "C-c w") 'er/expand-region)
 (setq expand-region-contract-fast-key "W")
 
 ;;ace-window
-(global-set-key (kbd "C-x o") 'ace-window)
+(global-set-key (kbd "H-x o") 'ace-window)
 ;;(setq aw-keys '(?a ?s ?d ?f ?g ?h ?j ?k ?l))
 
 ;; smartparens
@@ -47,7 +50,7 @@
 (global-set-key (kbd "<f5> s")                       'helm-find)
 (global-set-key (kbd "<f2>")                         'helm-execute-kmacro)
 (global-set-key (kbd "C-c i")                        'helm-imenu-in-all-buffers)
-(global-set-key (kbd "C-s")                          'helm-swoop)
+;;(global-set-key (kbd "C-s")                          'helm-swoop)
 (define-key global-map [remap jump-to-register]      'helm-register)
 (define-key global-map [remap list-buffers]          'helm-mini)
 (define-key global-map [remap dabbrev-expand]        'helm-dabbrev)
@@ -74,4 +77,3 @@
 
 ;; avy
 (global-set-key (kbd "C-c f") 'avy-goto-char)
-
