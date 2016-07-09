@@ -36,7 +36,7 @@
    ("j" scroll-up-command "scroll up")
    ("k" scroll-down-command "scroll down")
    ("l" sp-forward-symbol "forward symbol")
-   
+
    ("a" sp-beginning-of-sexp "begining of sexp")
    ("e" sp-end-of-sexp "end of sexp")
    ("u" sp-backward-up-sexp "up")
@@ -44,11 +44,23 @@
 
    ("w" sp-kill-sexp "kill")
    ("W" sp-copy-sexp "copy")
+   ("y" yank "yank")
+   ("Y" helm-show-kill-ring "browse kill ring")
+
+   ("[" sp-select-previous-thing "select previous")   
+   ("]" sp-select-next-thing-exchange)
+   ("}" sp-select-next-thing "select next")
+   ("{" sp-select-previous-thing-exchange)
+   
+   ("s" sp-splice-sexp "splice")
+   ("r" sp-rewrap-sexp "rewrap")
+   ("c" sp-comment "comment")
+   ("t" sp-transpose-sexp "transpose")
    
    ("," beginning-of-buffer "beginning of buffer")
    ("." end-of-buffer "end of buffer")
 
-   ("r" recenter "recenter")
+   ;("r" recenter "recenter")
 
    ("z" undo "undo")
    ("i" nil "insert")))
