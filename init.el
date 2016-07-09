@@ -5,4 +5,5 @@
 (load "~/.emacs.d/backups.el")
 (load "~/.emacs.d/mac-clipboard.el")
 (load "~/.emacs.d/helm.el")
+(load "~/.emacs.d/projectile.el")
 (load "~/.emacs.d/prog-mode.el")
