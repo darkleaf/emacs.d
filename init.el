@@ -3,6 +3,7 @@
 
 (load "~/.emacs.d/ui.el")
 (load "~/.emacs.d/backups.el")
+(load "~/.emacs.d/files.el")
 (load "~/.emacs.d/mac-clipboard.el")
 (load "~/.emacs.d/path-fix.el")
 (load "~/.emacs.d/helm.el")
