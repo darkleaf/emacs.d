@@ -40,6 +40,9 @@
 (add-hook 'clojure-mode-hook #'my-clojure-mode-hook)
 
 (add-hook 'clojure-mode-hook #'parinfer-mode)
+;;(add-hook 'clojure-mode-hook #'cider-mode)
+
+(add-to-list 'auto-mode-alist '(".boot\\'" . clojure-mode))
 
 ;;js
 ;(custom-set-variables
