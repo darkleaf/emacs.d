@@ -25,6 +25,8 @@
 (add-hook 'web-mode-hook 'web-add-electric-pairs)
 (add-hook 'web-mode-hook #'electric-pair-mode)
 
+(add-hook 'web-mode-hook (lambda () (add-to-list 'company-dabbrev-code-modes 'web-mode)))
+
 (add-to-list 'auto-mode-alist '("\\.jsx?\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.json\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.css\\'"  . web-mode))
@@ -36,11 +38,15 @@
 ;;clojure
 (defun my-clojure-mode-hook ()
     (clj-refactor-mode 1)
-    (cljr-add-keybindings-with-prefix "C-c C-r"))
+    (cljr-add-keybindings-with-prefix "C-c C-r")
+    (put-clojure-indent 'clojure.spec/fdef 1)
+    (setq cider-prompt-save-file-on-load 'always-save))
 (add-hook 'clojure-mode-hook #'my-clojure-mode-hook)
-
 (add-hook 'clojure-mode-hook #'parinfer-mode)
 ;;(add-hook 'clojure-mode-hook #'cider-mode)
+
+;;(defun my-cider-mode-hook ())
+;;(add-hook 'cider-mode-hook #'my-cider-mode-hook)
 
 (add-to-list 'auto-mode-alist '(".boot\\'" . clojure-mode))
 
