@@ -2,6 +2,7 @@
 (setq package-list '(use-package))
 (setq package-archives '(("gnu" . "https://elpa.gnu.org/packages/")
                          ("marmalade" . "https://marmalade-repo.org/packages/")
+                         ("melpa-stable" . "https://stable.melpa.org/packages/")
                          ("melpa" . "https://melpa.org/packages/")))
 (package-initialize)
 ;; fetch the list of packages available
@@ -38,23 +39,32 @@
   (ivy-mode 1))
 
 (use-package counsel-projectile
-    :config
-    (counsel-projectile-on))
+  :config
+  (counsel-projectile-on))
 
 (use-package clojure-mode
+  :pin melpa-stable
   :mode ".boot\\'"
   :config
   (put-clojure-indent 'clojure.spec/fdef 1))
 
 (use-package cider
+  :pin melpa-stable
   :init
   (setq cider-prompt-save-file-on-load 'always-save))
+
+(use-package clj-refactor
+  :pin melpa
+  :config
+  (cljr-add-keybindings-with-prefix "C-c C-m")
+  (add-hook 'clojure-mode-hook 'clj-refactor-mode)
+  (add-hook 'clojure-mode-hook 'yas-minor-mode))
 
 (use-package web-mode
   :mode ("\\.jsx?\\'" "\\.json\\'")
   :bind
   (:map web-mode-map
-   ("M-<tab>" . dabbrev-completion))
+        ("M-<tab>" . dabbrev-completion))
   :init
   (setq web-mode-markup-indent-offset 2)
   (setq web-mode-css-indent-offset 2)
