@@ -17,7 +17,8 @@
 (load "~/.emacs.d/ui.el")
 (load "~/.emacs.d/backups.el")
 (load "~/.emacs.d/files.el")
-(load "~/.emacs.d/path-fix.el")
+;;(load "~/.emacs.d/path-fix.el")
+(add-to-list 'exec-path "/usr/local/bin")
 
 (setq dabbrev-case-fold-search nil)
 
@@ -32,6 +33,7 @@
   (projectile-global-mode))
 
 (use-package ivy
+  :pin melpa
   :bind
   (("C-s" . swiper)
    ("M-y" . counsel-yank-pop))
@@ -49,14 +51,14 @@
   (put-clojure-indent 'clojure.spec/fdef 1))
 
 (use-package cider
-  :pin melpa-stable
+  :pin melpa
   :init
   (setq cider-prompt-save-file-on-load 'always-save))
 
 (use-package clj-refactor
   :pin melpa
   :config
-  (cljr-add-keybindings-with-prefix "C-c C-m")
+  ;;(cljr-add-keybindings-with-prefix "C-c C-m")
   (add-hook 'clojure-mode-hook 'clj-refactor-mode)
   (add-hook 'clojure-mode-hook 'yas-minor-mode))
 
@@ -73,6 +75,8 @@
   :config
   (add-hook 'web-mode-hook 'electric-pair-local-mode))
 
+(use-package yaml-mode)
+
 (use-package parinfer
   :pin melpa
   :bind
@@ -86,3 +90,17 @@
              smart-yank))   ; Yank behavior depend on mode.
     (add-hook 'clojure-mode-hook #'parinfer-mode)
     (add-hook 'emacs-lisp-mode-hook #'parinfer-mode)))
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(package-selected-packages
+   (quote
+    (yaml-mode parinfer web-mode clojure-mode counsel-projectile ivy projectile nlinum use-package))))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
