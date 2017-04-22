@@ -22,6 +22,16 @@
 
 (windmove-default-keybindings 'super)
 
+(global-set-key (kbd "C-x C-b") 'ibuffer)
+
+(use-package ibuffer-vc
+  :config
+  (add-hook 'ibuffer-hook
+    (lambda ()
+      (ibuffer-vc-set-filter-groups-by-vc-root)
+      (unless (eq ibuffer-sorting-mode 'alphabetic)
+        (ibuffer-do-sort-by-alphabetic)))))
+
 (use-package nlinum
   :init
   (setq nlinum-format "%d ")
@@ -127,5 +137,5 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (exec-path-from-shell dim spaceline dashboard magit yaml-mode parinfer web-mode clojure-mode counsel-projectile ivy projectile nlinum use-package))))
+    (ibuffer-projectile exec-path-from-shell dim spaceline dashboard magit yaml-mode parinfer web-mode clojure-mode counsel-projectile ivy projectile nlinum use-package))))
 (custom-set-faces)
