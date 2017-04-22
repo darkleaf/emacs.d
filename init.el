@@ -91,6 +91,8 @@
 
 (use-package yaml-mode)
 
+(use-package dockerfile-mode)
+
 (use-package parinfer
   :pin melpa
   :bind
@@ -141,5 +143,5 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (ibuffer-projectile exec-path-from-shell dim spaceline dashboard magit yaml-mode parinfer web-mode clojure-mode counsel-projectile ivy projectile nlinum use-package))))
+    (multi-term dockerfile-mode ibuffer-vc ibuffer-projectile exec-path-from-shell dim spaceline dashboard magit yaml-mode parinfer web-mode clojure-mode counsel-projectile ivy projectile nlinum use-package))))
 (custom-set-faces)
