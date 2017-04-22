@@ -17,8 +17,6 @@
 (load "~/.emacs.d/ui.el")
 (load "~/.emacs.d/backups.el")
 (load "~/.emacs.d/files.el")
-;;(load "~/.emacs.d/path-fix.el")
-(add-to-list 'exec-path "/usr/local/bin")
 
 (setq dabbrev-case-fold-search nil)
 
@@ -115,6 +113,11 @@
         (:eval (format " %s" (projectile-project-name)))
         projectile)))))
 
+(use-package exec-path-from-shell
+  :if window-system
+  :config
+  (exec-path-from-shell-initialize))
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -122,5 +125,5 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (dim spaceline dashboard magit yaml-mode parinfer web-mode clojure-mode counsel-projectile ivy projectile nlinum use-package))))
+    (exec-path-from-shell dim spaceline dashboard magit yaml-mode parinfer web-mode clojure-mode counsel-projectile ivy projectile nlinum use-package))))
 (custom-set-faces)
