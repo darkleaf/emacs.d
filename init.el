@@ -102,6 +102,19 @@
   (setq dashboard-items '((recents  . 5)
                           (projects . 5))))
 
+(use-package dim
+  :config
+  (progn
+    (dim-major-names
+     '((emacs-lisp-mode "ε")))
+    (dim-minor-names
+     '((parinfer-mode
+        (:eval (format " %s" (parinfer-current-mode)))
+        parinfer)
+       (projectile-mode
+        (:eval (format " %s" (projectile-project-name)))
+        projectile)))))
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -109,5 +122,5 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (dashboard magit yaml-mode parinfer web-mode clojure-mode counsel-projectile ivy projectile nlinum use-package))))
+    (dim spaceline dashboard magit yaml-mode parinfer web-mode clojure-mode counsel-projectile ivy projectile nlinum use-package))))
 (custom-set-faces)
