@@ -20,6 +20,8 @@
 
 (setq dabbrev-case-fold-search nil)
 
+(windmove-default-keybindings 'super)
+
 (use-package nlinum
   :init
   (setq nlinum-format "%d ")
