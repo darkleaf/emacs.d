@@ -32,6 +32,10 @@
       (unless (eq ibuffer-sorting-mode 'alphabetic)
         (ibuffer-do-sort-by-alphabetic)))))
 
+(use-package multi-term
+  :init
+  (setq multi-term-program "/bin/bash"))
+
 (use-package nlinum
   :init
   (setq nlinum-format "%d ")
