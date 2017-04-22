@@ -119,10 +119,10 @@
      '((emacs-lisp-mode "ε")))
     (dim-minor-names
      '((parinfer-mode
-        (:eval (format " %s" (parinfer-current-mode)))
+        (:eval (format " [%s]" (parinfer-current-mode)))
         parinfer)
        (projectile-mode
-        (:eval (format " %s" (projectile-project-name)))
+        (:eval (format " [%s]" (projectile-project-name)))
         projectile)))))
 
 (use-package exec-path-from-shell
