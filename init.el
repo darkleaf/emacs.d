@@ -95,6 +95,13 @@
   :bind
   (("C-x g" . magit-status)))
 
+(use-package dashboard
+  :config
+  (dashboard-setup-startup-hook)
+  :init
+  (setq dashboard-items '((recents  . 5)
+                          (projects . 5))))
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -102,9 +109,5 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (magit yaml-mode parinfer web-mode clojure-mode counsel-projectile ivy projectile nlinum use-package))))
+    (dashboard magit yaml-mode parinfer web-mode clojure-mode counsel-projectile ivy projectile nlinum use-package))))
 (custom-set-faces)
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
