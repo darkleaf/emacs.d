@@ -107,13 +107,6 @@
   :bind
   (("C-x g" . magit-status)))
 
-(use-package dashboard
-  :config
-  (dashboard-setup-startup-hook)
-  :init
-  (setq dashboard-items '((recents  . 5)
-                          (projects . 5))))
-
 (use-package dim
   :config
   (progn
@@ -133,7 +126,6 @@
   :config
   (add-hook 'eshell-mode-hook 'exec-path-from-shell-initialize)
   (exec-path-from-shell-initialize))
-
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -141,7 +133,7 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (exec-path-from-shell dim dashboard magit parinfer dockerfile-mode yaml-mode web-mode clj-refactor cider clojure-mode counsel-projectile ivy projectile nlinum ibuffer-vc use-package))))
+    (exec-path-from-shell dim magit parinfer dockerfile-mode yaml-mode web-mode clj-refactor cider clojure-mode counsel-projectile ivy projectile nlinum ibuffer-vc use-package))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
