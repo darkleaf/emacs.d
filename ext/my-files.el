@@ -7,4 +7,7 @@
 (setq make-backup-files nil)
 (setq auto-save-default nil)
 
+(recentf-mode 1)
+(setq recentf-max-menu-items 25)
+
 (provide 'my-files)

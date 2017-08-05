@@ -2,7 +2,6 @@
 
 (setq dabbrev-case-fold-search nil)
 
-
 (use-package projectile
   :config
   (projectile-global-mode))
@@ -13,7 +12,10 @@
   (("C-s" . swiper)
    ("M-y" . counsel-yank-pop))
   :config
-  (ivy-mode 1))
+  (ivy-mode 1)
+  (setq ivy-use-virtual-buffers t)
+  (setq ivy-re-builders-alist
+        '((t . ivy--regex-ignore-order))))
 
 (use-package counsel-projectile
   :init
