@@ -5,7 +5,7 @@
   (put-clojure-indent 'clojure.spec/fdef 1))
 
 (use-package cider
-  :pin melpa
+  :pin melpa-stable
   :init
   (setq cider-prompt-save-file-on-load 'always-save))
 

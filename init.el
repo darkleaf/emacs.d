@@ -36,9 +36,15 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (exec-path-from-shell dim magit parinfer dockerfile-mode yaml-mode web-mode clj-refactor cider clojure-mode counsel-projectile ivy projectile nlinum ibuffer-vc use-package))))
-(custom-set-faces)
+    (cider clj-refactor exec-path-from-shell dim magit parinfer dockerfile-mode yaml-mode web-mode clojure-mode counsel-projectile ivy projectile nlinum ibuffer-vc use-package))))
+(custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ )
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+(put 'upcase-region 'disabled nil)

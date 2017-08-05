@@ -11,4 +11,8 @@
   :bind
   (("C-x g" . magit-status)))
 
+(use-package ruby-mode
+  :config
+  (defun ruby-mode-set-encoding () ()))
+
 (provide 'my-prog)

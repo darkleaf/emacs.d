@@ -1,5 +1,6 @@
 (add-hook 'before-save-hook 'whitespace-cleanup)
 (global-auto-revert-mode 1)
+(setq vc-handled-backends nil)
 (setq-default indent-tabs-mode nil)
 
 (setq backup-inhibited t)
