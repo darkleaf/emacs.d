@@ -10,9 +10,9 @@
   (setq cider-prompt-save-file-on-load 'always-save))
 
 (use-package clj-refactor
-  :pin melpa
+  :pin melpa-stable
   :config
-  ;;(cljr-add-keybindings-with-prefix "C-c C-m")
+  (cljr-add-keybindings-with-prefix "C-c r")
   (add-hook 'clojure-mode-hook 'clj-refactor-mode)
   (add-hook 'clojure-mode-hook 'yas-minor-mode))
 

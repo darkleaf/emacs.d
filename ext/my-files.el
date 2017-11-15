@@ -10,4 +10,5 @@
 (recentf-mode 1)
 (setq recentf-max-menu-items 25)
 
+(setq dired-dwim-target t)
 (provide 'my-files)
