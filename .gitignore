@@ -8,3 +8,5 @@ projectile.cache
 recentf
 /auto-save-list
 /network-security.data
+/straight/*
+!/straight/versions

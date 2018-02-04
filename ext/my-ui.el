@@ -10,7 +10,9 @@
 (when (window-system)
   ;;(set-face-attribute 'default nil :family "Source Code Pro" :height 165)
   ;;(set-face-attribute 'default nil :family "Courier" :height 165)
-  (set-face-attribute 'default nil :family "Roboto Mono" :height 165))
+
+  ;;https://medium.com/@deepak.gulati/using-sf-mono-in-emacs-6712c45b2a6d
+  (set-face-attribute 'default nil :font "SF Mono-20"))
 
 (use-package dim
   :config

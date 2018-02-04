@@ -15,7 +15,6 @@
                   "location" "__dirname" "console" "JSON" "process")))
 
 (use-package rjsx-mode
-  :mode ("\\.jsx?\\'")
-  :pin melpa-stable)
+  :mode ("\\.jsx?\\'"))
 
 (provide 'my-web)
