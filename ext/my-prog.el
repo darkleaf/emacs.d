@@ -7,6 +7,7 @@
 (use-package yaml-mode)
 (use-package dockerfile-mode)
 (use-package markdown-mode)
+(use-package go-mode)
 
 (use-package magit
   :bind
