@@ -2,6 +2,8 @@
   :bind
   (:map web-mode-map
         ("M-<tab>" . dabbrev-completion))
+  :mode
+  ("\\.mustache\\'")
   :config
   (add-hook 'web-mode-hook 'electric-pair-local-mode))
 
@@ -16,5 +18,7 @@
 
 (use-package rjsx-mode
   :mode ("\\.jsx?\\'"))
+
+(use-package sass-mode)
 
 (provide 'my-web)
