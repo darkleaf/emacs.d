@@ -1,4 +1,5 @@
-/elpa
+/elpa/archives
+*.elc
 /games
 /url
 /eshell
