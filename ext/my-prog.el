@@ -1,13 +1,13 @@
 (use-package nlinum
+  :pin gnu
   :init
   (setq nlinum-format "%d ")
-  :config
-  (add-hook 'prog-mode-hook 'nlinum-mode))
+  (add-hook 'prog-mode-hook #'nlinum-mode))
 
 (use-package yaml-mode)
 (use-package dockerfile-mode)
 (use-package markdown-mode)
-(use-package toml-mode)
+(use-package toml-mode :pin melpa)
 (use-package haskell-mode)
 
 (use-package go-mode

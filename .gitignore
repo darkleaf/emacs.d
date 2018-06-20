@@ -1,12 +1,9 @@
 /elpa
-/old
 /games
 /url
 /eshell
 projectile-bookmarks.eld
-projectile.cache
-recentf
+/projectile.cache
+/recentf
 /auto-save-list
 /network-security.data
-/straight/*
-!/straight/versions
