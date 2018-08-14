@@ -17,4 +17,8 @@
   (setq ivy-re-builders-alist
         '((t . ivy--regex-ignore-order))))
 
+(use-package docker-tramp
+  :config
+  (require 'docker-tramp-compat))
+
 (provide 'my-tools)
