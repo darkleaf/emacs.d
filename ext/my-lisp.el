@@ -1,6 +1,7 @@
 (use-package clojure-mode
   :config
-  (put-clojure-indent 'clojure.spec/fdef 1))
+  (put-clojure-indent 'clojure.spec/fdef 1)
+  (put-clojure-indent 'clojure.spec.alpha/fdef 1))
 
 (use-package cider
   :init
