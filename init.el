@@ -36,7 +36,10 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (sass-mode rjsx-mode js2-mode web-mode parinfer clojure-mode magit go-mode haskell-mode toml-mode markdown-mode dockerfile-mode yaml-mode nlinum counsel-projectile dim exec-path-from-shell use-package))))
+    (avy clj-refactor docker-tramp sass-mode rjsx-mode js2-mode web-mode parinfer clojure-mode magit go-mode haskell-mode toml-mode markdown-mode dockerfile-mode yaml-mode nlinum counsel-projectile dim exec-path-from-shell use-package)))
+ '(safe-local-variable-values
+   (quote
+    ((eval setq cider-refresh-before-fn "user/stop" cider-refresh-after-fn "user/start")))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
