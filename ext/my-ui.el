@@ -8,11 +8,17 @@
 ;;(global-font-lock-mode -1)
 
 (when (window-system)
-  ;;(set-face-attribute 'default nil :family "Source Code Pro" :height 165)
-  ;;(set-face-attribute 'default nil :family "Courier" :height 165)
+  ;; SF Mono: https://medium.com/@deepak.gulati/using-sf-mono-in-emacs-6712c45b2a6d
+  ;; SF Pro:  https://developer.apple.com/
+  (when (member "SF Mono" (font-family-list))
+    (set-face-attribute 'default nil :family "SF Mono" :height 200))
+  (when (member "SF Pro" (font-family-list))
+    (set-face-attribute 'variable-pitch nil :family "SF Pro" :height 200)))
 
-  ;;https://medium.com/@deepak.gulati/using-sf-mono-in-emacs-6712c45b2a6d
-  (set-face-attribute 'default nil :font "SF Mono-20"))
+(use-package mixed-pitch
+  :pin melpa
+  :hook
+  (text-mode . mixed-pitch-mode))
 
 (use-package dim
   :config
