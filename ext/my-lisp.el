@@ -8,11 +8,11 @@
   :init
   (setq cider-prompt-save-file-on-load 'always-save))
 
-;; (use-package clj-refactor
-;;   :config
-;;   (cljr-add-keybindings-with-prefix "C-c r")
-;;   (add-hook 'clojure-mode-hook #'clj-refactor-mode)
-;;   (add-hook 'clojure-mode-hook 'yas-minor-mode))
+(use-package clj-refactor
+  :config
+  (cljr-add-keybindings-with-prefix "C-c r")
+  (add-hook 'clojure-mode-hook #'clj-refactor-mode)
+  (add-hook 'clojure-mode-hook 'yas-minor-mode))
 
 (use-package parinfer
   :bind
