@@ -3,6 +3,8 @@
 (setq dabbrev-case-fold-search nil)
 
 (use-package counsel-projectile
+  :init
+  (setq projectile-keymap-prefix (kbd "C-c p"))
   :config
   (counsel-projectile-mode))
 

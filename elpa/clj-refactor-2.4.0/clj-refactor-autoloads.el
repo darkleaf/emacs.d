@@ -1,10 +1,12 @@
 ;;; clj-refactor-autoloads.el --- automatically extracted autoloads
 ;;
 ;;; Code:
-(add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory #$) (car load-path))))
+
 
-;;;### (autoloads nil "clj-refactor" "clj-refactor.el" (23587 35188
-;;;;;;  0 0))
+;;;### (autoloads nil "clj-refactor" "clj-refactor.el" (0 0 0 0))
 ;;; Generated autoloads from clj-refactor.el
 
 (autoload 'cljr-add-keybindings-with-prefix "clj-refactor" "\
@@ -335,10 +337,12 @@ A mode to keep the clj-refactor keybindings.
 
 \(fn &optional ARG)" t nil)
 
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "clj-refactor" '("cjr--occurrence-count" "clj" "hydra-cljr-" "*cljr--noninteractive*")))
+
 ;;;***
 
 ;;;### (autoloads nil nil ("clj-refactor-compat.el" "clj-refactor-pkg.el")
-;;;;;;  (23587 35188 0 0))
+;;;;;;  (0 0 0 0))
 
 ;;;***
 
@@ -346,5 +350,6 @@ A mode to keep the clj-refactor keybindings.
 ;; version-control: never
 ;; no-byte-compile: t
 ;; no-update-autoloads: t
+;; coding: utf-8
 ;; End:
 ;;; clj-refactor-autoloads.el ends here

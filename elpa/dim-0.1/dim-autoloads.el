@@ -1,9 +1,12 @@
 ;;; dim-autoloads.el --- automatically extracted autoloads
 ;;
 ;;; Code:
-(add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory #$) (car load-path))))
+
 
-;;;### (autoloads nil "dim" "dim.el" (23338 48720 0 0))
+;;;### (autoloads nil "dim" "dim.el" (0 0 0 0))
 ;;; Generated autoloads from dim.el
 
 (autoload 'dim-major-name "dim" "\
@@ -34,11 +37,14 @@ Each element of the list should be a list of arguments taken by
 
 \(fn SPECS)" nil nil)
 
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "dim" '("dim-")))
+
 ;;;***
 
 ;; Local Variables:
 ;; version-control: never
 ;; no-byte-compile: t
 ;; no-update-autoloads: t
+;; coding: utf-8
 ;; End:
 ;;; dim-autoloads.el ends here

@@ -36,7 +36,7 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (langtool avy clj-refactor docker-tramp sass-mode rjsx-mode js2-mode web-mode parinfer magit go-mode haskell-mode toml-mode dockerfile-mode yaml-mode nlinum counsel-projectile dim exec-path-from-shell use-package)))
+    (graphql projectile s swiper toml-mode treepy use-package with-editor yasnippet async bind-key cider clj-refactor clojure-mode counsel dash edn epl ghub git-commit haml-mode hydra inflections ivy let-alist magit-popup markdown-mode mixed-pitch multiple-cursors paredit peg pkg-info queue seq sesman spinner magit langtool avy docker-tramp sass-mode rjsx-mode js2-mode web-mode parinfer go-mode haskell-mode dockerfile-mode yaml-mode nlinum counsel-projectile dim exec-path-from-shell)))
  '(safe-local-variable-values
    (quote
     ((eval setq cider-refresh-before-fn "user/stop" cider-refresh-after-fn "user/start")))))

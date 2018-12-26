@@ -1,9 +1,12 @@
 ;;; sesman-autoloads.el --- automatically extracted autoloads
 ;;
 ;;; Code:
-(add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory #$) (car load-path))))
+
 
-;;;### (autoloads nil "sesman" "sesman.el" (23587 31661 0 0))
+;;;### (autoloads nil "sesman" "sesman.el" (0 0 0 0))
 ;;; Generated autoloads from sesman.el
 
 (autoload 'sesman-start "sesman" "\
@@ -72,10 +75,12 @@ Break any of the previously created links.
 \(fn)" t nil)
  (autoload 'sesman-map "sesman" "Session management prefix keymap." t 'keymap)
 
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "sesman" '("sesman-")))
+
 ;;;***
 
-;;;### (autoloads nil "sesman-browser" "sesman-browser.el" (23587
-;;;;;;  31661 0 0))
+;;;### (autoloads nil "sesman-browser" "sesman-browser.el" (0 0 0
+;;;;;;  0))
 ;;; Generated autoloads from sesman-browser.el
 
 (autoload 'sesman-browser "sesman-browser" "\
@@ -84,9 +89,11 @@ See `sesman-browser-mode' for more details.
 
 \(fn)" t nil)
 
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "sesman-browser" '("sesman-")))
+
 ;;;***
 
-;;;### (autoloads nil nil ("sesman-pkg.el") (23587 31661 0 0))
+;;;### (autoloads nil nil ("sesman-pkg.el") (0 0 0 0))
 
 ;;;***
 
@@ -94,5 +101,6 @@ See `sesman-browser-mode' for more details.
 ;; version-control: never
 ;; no-byte-compile: t
 ;; no-update-autoloads: t
+;; coding: utf-8
 ;; End:
 ;;; sesman-autoloads.el ends here
