@@ -36,7 +36,7 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (avy clj-refactor docker-tramp sass-mode rjsx-mode js2-mode web-mode parinfer clojure-mode magit go-mode haskell-mode toml-mode dockerfile-mode yaml-mode nlinum counsel-projectile dim exec-path-from-shell use-package)))
+    (langtool avy clj-refactor docker-tramp sass-mode rjsx-mode js2-mode web-mode parinfer magit go-mode haskell-mode toml-mode dockerfile-mode yaml-mode nlinum counsel-projectile dim exec-path-from-shell use-package)))
  '(safe-local-variable-values
    (quote
     ((eval setq cider-refresh-before-fn "user/stop" cider-refresh-after-fn "user/start")))))
@@ -46,3 +46,4 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
+(put 'downcase-region 'disabled nil)

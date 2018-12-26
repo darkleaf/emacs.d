@@ -18,7 +18,7 @@
 (use-package mixed-pitch
   :pin melpa
   :hook
-  (text-mode . mixed-pitch-mode))
+  (markdown-mode . mixed-pitch-mode))
 
 (use-package dim
   :config
