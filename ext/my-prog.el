@@ -25,10 +25,10 @@
   :config
   (defun ruby-mode-set-encoding () ()))
 
-(provide 'my-prog)
-
 ;; brew install hunspell
 ;; https://github.com/titoBouzout/Dictionaries
 ;; Russian-English Bilingual -> ru_RU
 ;; ~/Library/Spelling
 (setq ispell-program-name "hunspell")
+
+(provide 'my-prog)

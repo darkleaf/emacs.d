@@ -2,11 +2,13 @@
   :config
   (put-clojure-indent 'clojure.spec/fdef 1)
   (put-clojure-indent 'clojure.spec.alpha/fdef 1)
-  (put-clojure-indent 'clojure.core.match/match 1))
+  (put-clojure-indent 'clojure.core.match/match 1)
+  (put-clojure-indent 'not-join 1))
 
 (use-package cider
   :init
   (setq cider-prompt-save-file-on-load 'always-save))
+  ;;(setq cider-clojure-cli-global-options "-Adev"))
 
 (use-package clj-refactor
   :config
