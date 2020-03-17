@@ -1,9 +1,15 @@
 (require 'package)
 ;; (setq package-enable-at-startup nil)
-(add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/"))
-(add-to-list 'package-archives '("melpa-stable" . "https://stable.melpa.org/packages/"))
-;;(add-to-list 'package-archives '("marmalade" . "http://marmalade-repo.org/packages/"))
-(add-to-list 'package-archives '("gnu" . "http://elpa.gnu.org/packages/"))
+
+(setq package-archives
+      '(("melpa-stable" . "https://stable.melpa.org/packages/")
+        ("gnu"     . "https://elpa.gnu.org/packages/")
+        ("melpa"        . "https://melpa.org/packages/"))
+      package-archive-priorities
+      '(("melpa-stable" . 10)
+        ("gnu"          . 5)
+        ("melpa"        . 0)))
+
 (package-initialize)
 
 (unless (package-installed-p 'use-package)
@@ -34,12 +40,33 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(package-selected-packages
-   (quote
-    (graphql projectile s swiper toml-mode treepy use-package with-editor yasnippet async bind-key clj-refactor counsel dash edn epl ghub git-commit haml-mode hydra inflections ivy let-alist magit-popup markdown-mode mixed-pitch multiple-cursors paredit peg pkg-info queue seq sesman spinner magit langtool avy docker-tramp sass-mode rjsx-mode js2-mode web-mode parinfer go-mode haskell-mode dockerfile-mode yaml-mode nlinum counsel-projectile dim exec-path-from-shell)))
+ '(package-selected-packages (quote (let-alist seq langtool)))
  '(safe-local-variable-values
    (quote
-    ((eval setq cider-refresh-before-fn "user/stop" cider-refresh-after-fn "user/start")))))
+    ((eval define-clojure-indent
+           (p\.types/defprotocol+
+            (quote
+             (1
+              (:defn))))
+           (p\.types/definterface+
+            (quote
+             (1
+              (:defn))))
+           (p\.types/def-abstract-type
+            (quote
+             (1
+              (:defn))))
+           (p\.types/deftype+
+            (quote
+             (2 nil nil
+                (:defn))))
+           (p\.types/defrecord+
+            (quote
+             (2 nil nil
+                (:defn)))))
+     (cljr-favor-prefix-notation . t)
+     (eval setq cider-refresh-before-fn "user/stop" cider-refresh-after-fn "user/start" cider-clojure-cli-global-options "-Adev")
+     (eval setq cider-refresh-before-fn "user/stop" cider-refresh-after-fn "user/start")))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

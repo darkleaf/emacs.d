@@ -2,12 +2,7 @@
 
 (setq dabbrev-case-fold-search nil)
 
-(use-package counsel-projectile
-  :init
-  (setq projectile-keymap-prefix (kbd "C-c p"))
-  :config
-  (counsel-projectile-mode))
-
+(use-package projectile)
 (use-package ivy
   :bind
   (("C-s"   . swiper)
@@ -18,17 +13,25 @@
   (setq ivy-use-virtual-buffers t)
   (setq ivy-re-builders-alist
         '((t . ivy--regex-ignore-order))))
+(use-package swiper)
+(use-package counsel)
 
-(use-package avy
-  :bind
-  (("C-:" . avy-goto-char)
-   ("C-'" . avy-goto-char-2)
-   ("M-g f" . avy-goto-line)
-   ("M-g w" . avy-goto-word-1)
-   ("M-g e" . avy-goto-word-0)))
-
-(use-package docker-tramp
+(use-package counsel-projectile
+  :init
+  (define-key projectile-mode-map (kbd "C-c p") 'projectile-command-map)
   :config
-  (require 'docker-tramp-compat))
+  (counsel-projectile-mode))
+
+;; (use-package avy
+;;   :bind
+;;   (("C-:" . avy-goto-char)
+;;    ("C-'" . avy-goto-char-2)
+;;    ("M-g f" . avy-goto-line)
+;;    ("M-g w" . avy-goto-word-1)
+;;    ("M-g e" . avy-goto-word-0)))
+
+;; (use-package docker-tramp
+;;   :config
+;;   (require 'docker-tramp-compat))
 
 (provide 'my-tools)
