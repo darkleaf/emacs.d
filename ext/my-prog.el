@@ -1,8 +1,8 @@
-(use-package nlinum
-  :pin gnu
-  :init
-  (setq nlinum-format "%d ")
-  (add-hook 'prog-mode-hook #'nlinum-mode))
+;; (use-package nlinum
+;;   :pin gnu
+;;   :init
+;;   (setq nlinum-format "%d ")
+;;   (add-hook 'prog-mode-hook #'nlinum-mode))
 
 (use-package yaml-mode)
 (use-package dockerfile-mode)
