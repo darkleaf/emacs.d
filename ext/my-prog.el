@@ -25,6 +25,11 @@
   :config
   (defun ruby-mode-set-encoding () ()))
 
+(use-package graphviz-dot-mode
+  :ensure t
+  :config
+  (setq graphviz-dot-indent-width 2))
+
 ;; brew install hunspell
 ;; https://github.com/titoBouzout/Dictionaries
 ;; Russian-English Bilingual -> ru_RU
