@@ -11,9 +11,9 @@
   ;; SF Mono: https://medium.com/@deepak.gulati/using-sf-mono-in-emacs-6712c45b2a6d
   ;; SF Pro:  https://developer.apple.com/
   (when (member "SF Mono" (font-family-list))
-    (set-face-attribute 'default nil :family "SF Mono" :height 200))
+    (set-face-attribute 'default nil :family "SF Mono" :height 180))
   (when (member "SF Pro" (font-family-list))
-    (set-face-attribute 'variable-pitch nil :family "SF Pro" :height 200)))
+    (set-face-attribute 'variable-pitch nil :family "SF Pro" :height 180)))
 
 (use-package mixed-pitch
   :pin melpa

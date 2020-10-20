@@ -19,6 +19,8 @@
 (use-package rjsx-mode
   :mode ("\\.jsx?\\'"))
 
+(use-package typescript-mode)
+
 (use-package sass-mode)
 
 (provide 'my-web)

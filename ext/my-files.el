@@ -11,4 +11,7 @@
 (setq recentf-max-menu-items 25)
 
 (setq dired-dwim-target t)
+
+(use-package sudo-edit)
+
 (provide 'my-files)

@@ -30,6 +30,16 @@
   :config
   (setq graphviz-dot-indent-width 2))
 
+(use-package haskell-mode)
+(use-package lsp-haskell
+  :pin melpa)
+
+(defun my-java-indent-setup ()
+  (c-set-offset 'arglist-intro '+)
+  (c-set-offset 'arglist-close '0))
+(add-hook 'java-mode-hook 'my-java-indent-setup)
+
+
 ;; brew install hunspell
 ;; https://github.com/titoBouzout/Dictionaries
 ;; Russian-English Bilingual -> ru_RU

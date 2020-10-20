@@ -20,6 +20,8 @@
   (require 'use-package))
 (require 'bind-key)
 
+;; (byte-recompile-directory (expand-file-name "~/.emacs.d/elpa") 0)
+
 (setq use-package-always-ensure t)
 (setq use-package-always-pin "melpa-stable")
 
@@ -40,33 +42,29 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(package-selected-packages (quote (let-alist seq langtool)))
+ '(auth-source-save-behavior nil)
+ '(package-selected-packages
+   '(sudo-edit typescript-mode lsp-haskell let-alist seq langtool))
  '(safe-local-variable-values
-   (quote
-    ((eval define-clojure-indent
+   '((eval define-clojure-indent
            (p\.types/defprotocol+
-            (quote
-             (1
-              (:defn))))
+            '(1
+              (:defn)))
            (p\.types/definterface+
-            (quote
-             (1
-              (:defn))))
+            '(1
+              (:defn)))
            (p\.types/def-abstract-type
-            (quote
-             (1
-              (:defn))))
+            '(1
+              (:defn)))
            (p\.types/deftype+
-            (quote
-             (2 nil nil
-                (:defn))))
+            '(2 nil nil
+                (:defn)))
            (p\.types/defrecord+
-            (quote
-             (2 nil nil
-                (:defn)))))
+            '(2 nil nil
+                (:defn))))
      (cljr-favor-prefix-notation . t)
      (eval setq cider-refresh-before-fn "user/stop" cider-refresh-after-fn "user/start" cider-clojure-cli-global-options "-Adev")
-     (eval setq cider-refresh-before-fn "user/stop" cider-refresh-after-fn "user/start")))))
+     (eval setq cider-refresh-before-fn "user/stop" cider-refresh-after-fn "user/start"))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
