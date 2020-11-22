@@ -44,7 +44,7 @@
  ;; If there is more than one, they won't work right.
  '(auth-source-save-behavior nil)
  '(package-selected-packages
-   '(sudo-edit typescript-mode lsp-haskell let-alist seq langtool))
+   '(json-mode nix-mode sudo-edit typescript-mode lsp-haskell let-alist seq langtool))
  '(safe-local-variable-values
    '((eval define-clojure-indent
            (p\.types/defprotocol+

@@ -25,6 +25,8 @@
   :config
   (defun ruby-mode-set-encoding () ()))
 
+(use-package haml-mode)
+
 (use-package graphviz-dot-mode
   :ensure t
   :config
@@ -39,6 +41,8 @@
   (c-set-offset 'arglist-close '0))
 (add-hook 'java-mode-hook 'my-java-indent-setup)
 
+(use-package json-mode)
+(use-package nix-mode)
 
 ;; brew install hunspell
 ;; https://github.com/titoBouzout/Dictionaries
