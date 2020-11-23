@@ -19,7 +19,8 @@
 
 (use-package magit
   :bind
-  (("C-x g" . magit-status)))
+  (("C-x g" . magit-status)
+   ("C-c M-g" . magit-file-popup)))
 
 (use-package ruby-mode
   :config
