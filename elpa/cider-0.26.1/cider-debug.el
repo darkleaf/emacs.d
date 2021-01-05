@@ -44,7 +44,7 @@
 
 ;;; Customization
 (defgroup cider-debug nil
-  "Presentation and behaviour of the cider debugger."
+  "Presentation and behavior of the cider debugger."
   :prefix "cider-debug-"
   :group 'cider
   :package-version '(cider . "0.10.0"))
@@ -624,7 +624,10 @@ is a coordinate measure in sexps."
               (save-excursion
                 ;; Get to the proper line & column in the file
                 (forward-line (- line (line-number-at-pos)))
-                (move-to-column column)
+                ;; Column numbers in the response start from 1.
+                ;; Convert to Emacs system which starts from 0
+                ;; Inverse of `cider-column-number-at-pos'.
+                (move-to-column (max 0 (1- column)))
                 ;; Check if it worked
                 (when (cider--debug-position-for-code code)
                   ;; Find the desired sexp.
