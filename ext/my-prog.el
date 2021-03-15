@@ -18,13 +18,7 @@
   (add-hook 'go-mode-hook (lambda () (setq indent-tabs-mode nil))))
 
 (use-package magit
-  :pin melpa
-  :bind
-  (("C-x g" . magit-status)
-   ("C-c M-g" . magit-file-popup)))
-
-; ; Warning (defvaralias): Overwriting value of ‘magit-mode-setup-hook’ by aliasing to ‘magit-setup-buffer-hook’
-
+  :pin melpa)
 
 (use-package ruby-mode
   :config
