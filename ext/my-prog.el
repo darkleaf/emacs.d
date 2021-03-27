@@ -20,6 +20,10 @@
 (use-package magit
   :pin melpa)
 
+(use-package forge
+  :pin melpa
+  :after magit)
+
 (use-package ruby-mode
   :config
   (defun ruby-mode-set-encoding () ()))
