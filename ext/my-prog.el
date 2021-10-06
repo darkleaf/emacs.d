@@ -15,7 +15,8 @@
 
 (use-package go-mode
   :config
-  (add-hook 'go-mode-hook (lambda () (setq indent-tabs-mode nil))))
+  :mode ("\\.go\\'" "go\\.mod\\'"))
+  ;;(add-hook 'go-mode-hook (lambda () (setq indent-tabs-mode nil))))
 
 (use-package magit
   :pin melpa)

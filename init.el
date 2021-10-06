@@ -43,10 +43,13 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(auth-source-save-behavior nil)
+ '(js-indent-level 2)
+ '(json-reformat:indent-width 2)
  '(package-selected-packages
-   '(forge json-mode nix-mode sudo-edit typescript-mode lsp-haskell let-alist seq langtool))
+   '(sayid kotlin-mode forge json-mode nix-mode sudo-edit typescript-mode lsp-haskell let-alist seq langtool))
  '(safe-local-variable-values
-   '((eval define-clojure-indent
+   '((before-save-hook)
+     (eval define-clojure-indent
            (p\.types/defprotocol+
             '(1
               (:defn)))
@@ -71,5 +74,10 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+
 (put 'downcase-region 'disabled nil)
 (put 'upcase-region 'disabled nil)
