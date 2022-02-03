@@ -39,6 +39,11 @@
   :pin melpa-stable
   :bind
   (("C-c t" . parinfer-rust-toggle-paren-mode))
-  :hook emacs-lisp-mode)
+  :init
+  (add-hook 'clojure-mode-hook #'parinfer-rust-mode)
+  (add-hook 'emacs-lisp-mode-hook #'parinfer-rust-mode)
+  (add-hook 'common-lisp-mode-hook #'parinfer-rust-mode)
+  (add-hook 'scheme-mode-hook #'parinfer-rust-mode)
+  (add-hook 'lisp-mode-hook #'parinfer-rust-mode))
 
 (provide 'my-lisp)
