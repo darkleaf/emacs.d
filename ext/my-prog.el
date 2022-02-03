@@ -15,8 +15,11 @@
 
 (use-package go-mode
   :config
+  (add-hook 'go-mode-hook
+            (lambda ()
+              (setq indent-tabs-mode 1)
+              (setq tab-width 4)))
   :mode ("\\.go\\'" "go\\.mod\\'"))
-  ;;(add-hook 'go-mode-hook (lambda () (setq indent-tabs-mode nil))))
 
 (use-package magit
   :pin melpa)
@@ -46,6 +49,9 @@
 (add-hook 'java-mode-hook 'my-java-indent-setup)
 
 (use-package json-mode)
+(use-package jsonnet-mode
+  :config
+  (setq jsonnet-library-search-directories (list "./vendor")))
 (use-package nix-mode)
 
 ;; brew install hunspell

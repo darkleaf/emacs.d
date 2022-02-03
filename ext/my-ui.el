@@ -26,9 +26,9 @@
     (dim-major-names
      '((emacs-lisp-mode "ε")))
     (dim-minor-names
-     '((parinfer-mode
-        (:eval (format " [%s]" (parinfer-current-mode)))
-        parinfer)
+     '((parinfer-rust-mode
+        (:eval (format " (%s)" parinfer-rust--mode))
+        parinfer-rust)
        (projectile-mode
         (:eval (format " [%s]" (projectile-project-name)))
         projectile)))))

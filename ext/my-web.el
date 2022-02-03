@@ -5,7 +5,8 @@
   :mode
   ("\\.mustache\\'")
   :config
-  (add-hook 'web-mode-hook 'electric-pair-local-mode))
+  (add-hook 'web-mode-hook 'electric-pair-local-mode)
+  (setq web-mode-markup-indent-offset 2))
 
 (use-package haml-mode)
 
