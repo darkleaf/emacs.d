@@ -27,7 +27,7 @@
   :pin melpa-stable
   :init
   (setq cider-prompt-save-file-on-load 'always-save)
-  (setq cider-clojure-cli-global-options "-Adev"))
+  (setq cider-clojure-cli-global-options "-A:dev"))
 
 (use-package clj-refactor
   :config
