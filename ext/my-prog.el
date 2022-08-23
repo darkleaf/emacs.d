@@ -60,4 +60,7 @@
 ;; ~/Library/Spelling
 (setq ispell-program-name "hunspell")
 
+(use-package csharp-mode)
+
+
 (provide 'my-prog)
