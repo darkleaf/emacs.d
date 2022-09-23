@@ -15,6 +15,9 @@
         '((t . ivy--regex-ignore-order))))
 (use-package swiper)
 (use-package counsel)
+(use-package avy
+  :bind
+  (("C-:" . avy-goto-word-1)))
 
 (use-package counsel-projectile
   :init
