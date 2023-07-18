@@ -26,7 +26,9 @@
 
 
 (use-package typescript-mode
-  :mode ("\\.tsx?\\'"))
+  :mode ("\\.tsx?\\'")
+  :config
+  (setq typescript-indent-level 2))
 
 (use-package sass-mode)
 
