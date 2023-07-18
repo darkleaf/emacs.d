@@ -8,12 +8,20 @@
 ;;     (forward-char 1)
 ;;     (clojure--normal-indent calculate-lisp-indent-last-sexp 'always-indent)))
 
+;;(global-prettify-symbols-mode 1)
+
+;; with-eval-after-load
+;; (eval-after-load 'clojure-mode
+;;   (setq clojure--prettify-symbols-alist
+;;         '(("\\\""  . ?״))))
+
 (use-package clojure-mode
+  ;; :init
+  ;; (add-hook 'clojure-mode-hook #'prettify-symbols-mode)
   :config
   (put-clojure-indent 'clojure.spec/fdef 1)
   (put-clojure-indent 'clojure.spec.alpha/fdef 1)
-  (put-clojure-indent 'clojure.core.match/match 1)
-  (put-clojure-indent 'not-join 1))
+  (put-clojure-indent 'clojure.core.match/match 1))
   ;; :init
   ;; (progn
   ;;   (add-hook 'clojure-mode-hook
