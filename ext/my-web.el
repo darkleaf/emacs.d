@@ -9,6 +9,8 @@
   (setq web-mode-markup-indent-offset 2))
 
 (use-package haml-mode)
+(use-package pebble-mode
+  :pin melpa)
 
 ;; https://github.com/magnars/.emacs.d/blob/master/settings/setup-js2-mode.el
 ;; (use-package js2-mode
