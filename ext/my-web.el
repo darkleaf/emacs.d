@@ -10,7 +10,9 @@
 
 (use-package haml-mode)
 (use-package pebble-mode
-  :pin melpa)
+  :pin melpa
+  :custom
+  (pebble-user-filters '("sortby")))
 
 ;; https://github.com/magnars/.emacs.d/blob/master/settings/setup-js2-mode.el
 ;; (use-package js2-mode
