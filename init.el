@@ -46,7 +46,7 @@
  '(js-indent-level 2)
  '(json-reformat:indent-width 2)
  '(package-selected-packages
-   '(rainbow-identifiers pebble-mode avy clojure-mod csharp-mode dotnet parinfer-rust-mode parinfer jsonnet-mode jsonnet sayid kotlin-mode forge json-mode nix-mode sudo-edit typescript-mode lsp-haskell let-alist seq langtool))
+   '(groovy-mode rainbow-identifiers pebble-mode avy clojure-mod csharp-mode dotnet parinfer-rust-mode parinfer jsonnet-mode jsonnet sayid kotlin-mode forge json-mode nix-mode sudo-edit typescript-mode lsp-haskell let-alist seq langtool))
  '(safe-local-variable-values
    '((cider-ns-refresh-before-fn . "gmonit.system/stop")
      (cider-ns-refresh-after-fn . "gmonit.system/start")
@@ -77,6 +77,11 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.

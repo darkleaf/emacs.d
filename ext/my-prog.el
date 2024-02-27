@@ -64,5 +64,6 @@
 
 (setq org-src-tab-acts-natively t)
 
+(use-package groovy-mode)
 
 (provide 'my-prog)
