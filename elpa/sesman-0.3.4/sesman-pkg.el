@@ -2,6 +2,8 @@
   '((emacs "25"))
   :commit "3df33018f1c42f09db21cebe39a25b389fe35f02" :authors
   '(("Vitalie Spinu"))
+  :maintainers
+  '(("Vitalie Spinu"))
   :maintainer
   '("Vitalie Spinu")
   :keywords
