@@ -11,7 +11,7 @@
   :config
   (setq markdown-fontify-code-blocks-natively t))
 (use-package toml-mode :pin melpa)
-(use-package haskell-mode)
+
 
 (use-package go-mode
   :config
@@ -39,9 +39,9 @@
   :config
   (setq graphviz-dot-indent-width 2))
 
-(use-package haskell-mode)
-(use-package lsp-haskell
-  :pin melpa)
+;; (use-package haskell-mode)
+;; (use-package lsp-haskell
+;;   :pin melpa)
 
 (defun my-java-indent-setup ()
   (c-set-offset 'arglist-intro '+)

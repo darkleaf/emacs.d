@@ -16,6 +16,7 @@
 ;;         '(("\\\""  . ?״))))
 
 (use-package clojure-mode
+  :pin melpa
   ;; :init
   ;; (add-hook 'clojure-mode-hook #'prettify-symbols-mode)
   :config

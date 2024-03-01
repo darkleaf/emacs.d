@@ -4,8 +4,6 @@
 
 ;; Author: Nathaniel Flath <flat0103@gmail.com>
 ;; URL: https://github.com/nflath/sudo-edit
-;; Package-Version: 0.1.1
-;; Package-Commit: a7ae1713bb659988bb1465a13b837fbc2d699504
 ;; Keywords: convenience
 ;; Version: 0.1.1
 ;; Package-Requires: ((emacs "24") (cl-lib "0.5"))

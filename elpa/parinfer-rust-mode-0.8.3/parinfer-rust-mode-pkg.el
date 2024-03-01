@@ -2,6 +2,8 @@
   '((emacs "26.1"))
   :commit "c825606e6aca4a2ed18c0af321df5f36a3c8c774" :authors
   '(("Justin Barclay" . "justinbarclay@gmail.com"))
+  :maintainers
+  '(("Justin Barclay" . "justinbarclay@gmail.com"))
   :maintainer
   '("Justin Barclay" . "justinbarclay@gmail.com")
   :keywords
