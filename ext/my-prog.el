@@ -65,6 +65,7 @@
 (setq org-src-tab-acts-natively t)
 
 (use-package groovy-mode
+  :mode ("\\.groovy\\'" "\\.sgroovy\\'")
   :config
   (setq groovy-indent-offset 2))
 
