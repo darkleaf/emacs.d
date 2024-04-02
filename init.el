@@ -53,7 +53,7 @@
  '(js-indent-level 2)
  '(json-reformat:indent-width 2)
  '(package-selected-packages
-   '(seq yaml-mode web-mode typescript-mode toml-mode sudo-edit sass-mode rainbow-identifiers pebble-mode parinfer-rust-mode nix-mode mixed-pitch lsp-haskell jsonnet-mode json-mode groovy-mode graphviz-dot-mode go-mode forge exec-path-from-shell dockerfile-mode dim csharp-mode counsel-projectile clj-refactor avy))
+   '(kotlin-mode seq yaml-mode web-mode typescript-mode toml-mode sudo-edit sass-mode rainbow-identifiers pebble-mode parinfer-rust-mode nix-mode mixed-pitch lsp-haskell jsonnet-mode json-mode groovy-mode graphviz-dot-mode go-mode forge exec-path-from-shell dockerfile-mode dim csharp-mode counsel-projectile clj-refactor avy))
  '(safe-local-variable-values
    '((cider-ns-refresh-before-fn . "gmonit.system/stop")
      (cider-ns-refresh-after-fn . "gmonit.system/start")
