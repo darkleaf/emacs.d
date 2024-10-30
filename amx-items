@@ -1,0 +1,33 @@
+
+;; ----- amx-history -----
+(
+ clojure-sort-ns
+ replace-string
+ json-mode
+ groovy-mode
+ clojure-mode
+ fundamental-mode
+ text-scale-increase
+)
+
+;; ----- amx-data -----
+(
+ (projectile-replace . 2)
+ (cider-pprint-eval-defun-to-comment . 4)
+ (cider-pprint-eval-defun-at-point . 1)
+ (cider-pprint-eval-last-sexp . 1)
+ (dired-find-file . 1)
+ (chmod . 1)
+ (dired-do-chmod . 1)
+ (clojure-mode . 3)
+ (swift-mode . 1)
+ (text-scale-increase . 2)
+ (cider-jack-in . 1)
+ (cider-connect-clj . 1)
+ (magit-init . 1)
+ (groovy-mode . 2)
+ (replace-string . 4)
+ (fundamental-mode . 1)
+ (json-mode . 1)
+ (clojure-sort-ns . 1)
+)

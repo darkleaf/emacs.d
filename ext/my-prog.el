@@ -69,5 +69,8 @@
   :config
   (setq groovy-indent-offset 2))
 
+(use-package swift-mode)
+
+(use-package lua-mode)
 
 (provide 'my-prog)
