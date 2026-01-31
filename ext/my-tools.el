@@ -3,6 +3,11 @@
 (setq dabbrev-case-fold-search nil)
 
 (use-package projectile)
+  ;; :config
+  ;; (setq projectile-indexing-method 'alien)
+  ;; (setq projectile-enable-caching t)
+  ;; (setq projectile-generic-command "fd . -0 --type f --color=never"))
+
 (use-package ivy
   :bind
   (("C-s"   . swiper)

@@ -22,7 +22,12 @@
   :mode ("\\.go\\'" "go\\.mod\\'"))
 
 (use-package magit
-  :pin melpa)
+  :pin melpa
+  :custom
+  (magit-git-executable "/usr/local/bin/git"))
+  ;;(magit-git-executable "/usr/bin/git")
+  ;; зеленым подсвечивать слова
+  ;;(magit-diff-refine-hunk 'all))
 
 ;; (use-package forge
 ;;   :pin melpa
