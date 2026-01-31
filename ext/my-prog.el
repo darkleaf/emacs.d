@@ -65,8 +65,6 @@
 ;; ~/Library/Spelling
 (setq ispell-program-name "hunspell")
 
-(use-package csharp-mode)
-
 (setq org-src-tab-acts-natively t)
 
 (use-package groovy-mode
