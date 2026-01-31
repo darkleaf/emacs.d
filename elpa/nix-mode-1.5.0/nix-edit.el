@@ -4,7 +4,6 @@
 ;; Homepage: https://github.com/NixOS/nix-mode
 ;; Keywords: nix
 ;; Package-Requires: ((emacs "24.3"))
-;; Version: 1.5.0
 
 ;; This file is NOT part of GNU Emacs.
 

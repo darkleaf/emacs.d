@@ -52,20 +52,32 @@
  '(auth-source-save-behavior nil)
  '(js-indent-level 2)
  '(json-reformat:indent-width 2)
- '(package-selected-packages
-   '(org-mode zig-mode protobuf-mode proto-mode lua-mode swift-mode amx which-key kotlin-mode seq yaml-mode web-mode typescript-mode toml-mode sudo-edit sass-mode rainbow-identifiers pebble-mode parinfer-rust-mode nix-mode mixed-pitch lsp-haskell jsonnet-mode json-mode groovy-mode graphviz-dot-mode go-mode forge exec-path-from-shell dockerfile-mode dim counsel-projectile clj-refactor avy))
+ '(package-selected-packages nil)
  '(safe-local-variable-values
    '((cider-ns-refresh-before-fn . "gmonit.system/stop")
      (cider-ns-refresh-after-fn . "gmonit.system/start")
      (cider-ns-refresh-before-fn . "gmoint.system/stop")
-     (eval setq cider-refresh-before-fn "user/stop" cider-refresh-after-fn "user/start" cider-clojure-cli-global-options "-Adev")
-     (eval setq cider-refresh-before-fn "user/stop" cider-refresh-after-fn "user/start"))))
+     (eval setq cider-refresh-before-fn "user/stop"
+           cider-refresh-after-fn "user/start"
+           cider-clojure-cli-global-options "-Adev")
+     (eval setq cider-refresh-before-fn "user/stop"
+           cider-refresh-after-fn "user/start"))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
