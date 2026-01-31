@@ -1,3 +1,4 @@
 ;;; -*- lisp-data -*-
-(("/Volumes/Data/Projects/github/HyperSoftLab/gmonit/")
+(("/Volumes/Data/Projects/github/newrelic/go-agent/")
+ ("/Volumes/Data/Projects/github/HyperSoftLab/gmonit/")
  ("/Volumes/Data/Projects/experiments/clojure/helidon/helidon-2-sse/"))

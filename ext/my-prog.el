@@ -78,4 +78,9 @@
 
 (use-package lua-mode)
 
+(use-package protobuf-mode)
+
+(use-package zig-mode
+  :pin melpa)
+
 (provide 'my-prog)
